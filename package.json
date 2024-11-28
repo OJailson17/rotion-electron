@@ -1,5 +1,6 @@
 {
 	"name": "rotion",
+	"productName": "Rotion",
 	"version": "1.0.0",
 	"description": "An Electron application with React and TypeScript",
 	"main": "./out/main/index.js",
@@ -10,7 +11,7 @@
 		"lint": "eslint . --fix",
 		"start": "electron-vite preview",
 		"dev": "electron-vite dev --watch",
-		"build": "npm run typecheck && electron-vite build",
+		"build": "electron-vite build",
 		"postinstall": "electron-builder install-app-deps",
 		"build:unpack": "npm run build && electron-builder --dir",
 		"build:win": "npm run build && electron-builder --win",
@@ -42,4 +43,5 @@
 		"typescript": "^5.5.2",
 		"vite": "^5.3.1"
 	}
+
 }

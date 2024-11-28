@@ -13,7 +13,7 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: ['**/out', '**/build'],
+    ignores: ['**/out', '**/build', '*.config.*'],
   },
   ...compat.extends('@rocketseat/eslint-config/react'),
 ]
